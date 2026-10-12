@@ -1,29 +1,26 @@
-# Welcome to your Lovable project
+# Aria Support Line
 
-This project was built with [Lovable](https://lovable.dev).
-
-## Build with Lovable
-
-Open your project in the [Lovable editor](https://lovable.dev) and keep building.
-
-- **Ship faster**: describe what you want to build and Lovable handles the code.
-- **Stay in sync**: connect the project to GitHub and every change made in Lovable is committed straight to your repository.
-- **Full ownership**: this code is yours. Push to your repository and your changes sync back into Lovable, ready for your next prompt.
+AI-powered voice customer support built with TanStack Start, React, Supabase, and an OpenAI-compatible AI gateway.
 
 ## Development
 
-Prefer working locally? You need Node.js and npm — [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating).
-
 ```sh
-git clone <this-repository-url>
-cd <repository-name>
 npm i
 npm run dev
 ```
 
-## Built with
+Required environment variables:
+
+- `VITE_SUPABASE_URL` / `SUPABASE_URL`
+- `VITE_SUPABASE_PUBLISHABLE_KEY` / `SUPABASE_PUBLISHABLE_KEY`
+- `SUPABASE_SERVICE_ROLE_KEY` (server)
+- `AI_API_KEY` (or `OPENAI_API_KEY`). OpenRouter keys are routed to `https://openrouter.ai/api/v1` and use Gemini for chat, transcription, and speech.
+- Optional overrides: `AI_GATEWAY_URL`, `AI_CHAT_MODEL`, `AI_TRANSCRIBE_MODEL`, `AI_TTS_MODEL`, `AI_TTS_VOICE`, `AI_TTS_FORMAT`
+
+## Stack
 
 - TanStack Start
 - TypeScript
 - React
 - Tailwind CSS
+- Supabase
